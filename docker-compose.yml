@@ -1,0 +1,22 @@
+version: '2'
+networks:
+  nw:
+services:
+  ansibleservice:
+    build: Ansible
+    container_name: ansible
+    image: ansible
+    ports:
+        - "9090:22"
+    restart: always
+    networks:
+       - nw
+  hostservice:
+    build: Host
+    container_name: host
+    image: host
+    ports:
+        - "9091:22"
+    restart: always
+    networks:
+       - nw

@@ -8,6 +8,8 @@
 #   - You can enter hostnames or ip addresses
 #   - A hostname/ip can be a member of multiple groups
 
+192.168.99.100:32775
+
 # Ex 1: Ungrouped hosts, specify before any group headers.
 
 ## green.example.com
